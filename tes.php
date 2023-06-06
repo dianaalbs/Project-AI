@@ -66,17 +66,6 @@ mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node B', 'N
 mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node C', 'Node D')");
 mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node D', 'Node A')");
 
-
-//SEMESTER 4
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node A')");
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node B')");
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node C')");
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node D')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node A', 'Node B')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node B', 'Node C')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node C', 'Node D')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node D', 'Node A')");
-
 // Langkah 4: Mengambil Data
 $result = mysqli_query($conn, "SELECT * FROM nodes");
 
