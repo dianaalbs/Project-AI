@@ -20,14 +20,14 @@
 $conn = mysqli_connect("localhost", "root", "", "dfs_example");
 
 // Langkah 3: Memasukkan Data
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node A')");
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node B')");
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node C')");
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node D')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node A', 'Node B')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node B', 'Node C')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node C', 'Node D')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node D', 'Node A')");
+//mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node A')");
+//mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node B')");
+//mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node C')");
+//mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node D')");
+//mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node A', 'Node B')");
+//mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node B', 'Node C')");
+//mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node C', 'Node D')");
+//mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node D', 'Node A')");
 
 
 //SEMESTER 1
@@ -48,10 +48,7 @@ mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Struktur Data & Algoritma
 mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Organisasi Sistem Komputer')");
 mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Pendidikan Kewarganegaraan')");
 mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Bahasa Inggris II')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node A', 'Node B')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node B', 'Node C')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node C', 'Node D')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node D', 'Node A')");
+
 
 //SEMESTER 3
 mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Matematika Diskrit II')");
@@ -61,10 +58,17 @@ mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Sistem Operasi')");
 mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Kewarganegaraan')");
 mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Metode Numerik')");
 mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Desain & Analisis Algoritma')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node A', 'Node B')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node B', 'Node C')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node C', 'Node D')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node D', 'Node A')");
+
+
+mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Kalkulus II', 'Kalkulus I')");
+mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Struktur Data & Algoritma', 'Konsep Pemrograman')");
+mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Aljabar Linier', 'Statistika & Probabilitas')");
+mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Organisasi Sistem Komputer', 'Sistem Digital')");
+mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Desain & Analisis Algoritma', 'Struktur Data & Algoritma')");
+mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Sistem Operasi', 'Organisasi Sistem Komputer')");
+mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Pemrograman Berorientasi Objek', 'Struktur Data & Algoritma')");
+mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Matematika Diskrit II ', 'Metematika Diskrit I')");
+
 
 // Langkah 4: Mengambil Data
 $result = mysqli_query($conn, "SELECT * FROM nodes");
