@@ -31,20 +31,23 @@ mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node D', 'N
 
 
 //SEMESTER 1
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node A')");
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node B')");
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node C')");
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node D')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node A', 'Node B')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node B', 'Node C')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node C', 'Node D')");
-mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node D', 'Node A')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Agama')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Konsep Pemrograman')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Sistem Digital')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Kalkulus I')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Fisika')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Bahasa Inggris')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Statistika & Probabilitas')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Bahasa Indonesia')");
 
 //SEMESTER 2
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node A')");
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node B')");
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node C')");
-mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Node D')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Kalkulus II')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Metematika Diskrit I')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Aljabar Linier')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Struktur Data & Algoritma')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Organisasi Sistem Komputer')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Pendidikan Kewarganegaraan')");
+mysqli_query($conn, "INSERT INTO nodes (nama) VALUES ('Bahasa Inggris II')");
 mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node A', 'Node B')");
 mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node B', 'Node C')");
 mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node C', 'Node D')");
