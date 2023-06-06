@@ -9,30 +9,30 @@ smt 1
 8 0953112008 Bahasa Indonesia             2            
 
 smt 2
-9  0953223009
-10 0953223010
-11 0953223011
-12 0953223012
-13 0953223013
-14 0953212014
-15 0953222015
+9  0953223009   Kalkulus II
+10 0953223010   Metematika Diskrit I
+11 0953223011   Aljabar Linier
+12 0953223012   Struktur Data & Algoritma
+13 0953223013   Organisasi Sistem Komputer
+14 0953212014   Pendidikan Kewarganegaraan
+15 0953222015   Bahasa Inggris II
 
 smt 3
-16 0953122016
-17 0953123017
-18 0953124018
-19 0953123019
-20 0953112003
-21 0953123021
-22 0953123022
+16 0953122016   Matematika Diskrit II   
+17 0953123017   Pemrograman Berorientasi Objek   
+18 0953124018   Basis Data   
+19 0953123019   Sistem Operasi   
+20 0953112003   Kewarganegaraan   
+21 0953123021   Metode Numerik   
+22 0953123022   Desain & Analisis Algoritma   
 
 smt 4
-23 0953224023
-24 0953223024
-25 0953223025
-26 0953224026
-27 0953223027
-28 0953223028
+23 0953224023   Jaringan Komputer
+24 0953223024   Pemrograman Web
+25 0953223025   Kecerdasan Buatan
+26 0953224026   Rekayasa Perangkat Lunak
+27 0953223027   Pengembangan Aplikasi Bergerak
+28 0953223028   Teori Bahasa & Automata
 
 smt 5
 29 0953123029
@@ -71,18 +71,18 @@ Wajib Minat Semester 6
 54 0953233052
 
 Pilihan Semester 6
-55 0953233053
-56 0953233054
-57 0953233055
-58 0953233056
-59 0953032057
-60 0953233058
-61 0953233059
-62 0953233060
-63 0953233061
-64 0953233062
-65 0953233063
-66 0953233064
+55 0953233053   Manajemen Proyek
+56 0953233054   Proyek Perangkat Lunak
+57 0953233055   Pengujian Perangkat Lunak
+58 0953233056   Business Intelligence
+59 0953032057   Kapita Selekta Ilmu Komputer
+60 0953233058   Komputasi Cloud
+61 0953233059   Keamanan Jaringan Komputer
+62 0953233060   Cyber Security
+63 0953233061   Sistem Pendukung Keputusan
+64 0953233062   Software Process
+65 0953233063   Pengamanan Data Multimedia
+66 0953233064   Natural Language Processing
 
 smt 7
 67 0953122065
