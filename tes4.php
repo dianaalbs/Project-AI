@@ -19,43 +19,41 @@
             $conn = mysqli_connect($servername, $username, $password, $dbname);
 
             //SEMESTER 1
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Agama')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Konsep Pemrograman')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Sistem Digital')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Kalkulus I')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Fisika')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Bahasa Inggris')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Statistika & Probabilitas')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Bahasa Indonesia')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Agama')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Konsep Pemrograman')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Sistem Digital')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Kalkulus I')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Fisika')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Bahasa Inggris')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Statistika & Probabilitas')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Bahasa Indonesia')");
 
-//SEMESTER 2
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Kalkulus II')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Metematika Diskrit I')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Aljabar Linier')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Struktur Data & Algoritma')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Organisasi Sistem Komputer')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Pendidikan Kewarganegaraan')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Bahasa Inggris II')");
+            //SEMESTER 2
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Kalkulus II')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Metematika Diskrit I')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Aljabar Linier')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Struktur Data & Algoritma')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Organisasi Sistem Komputer')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Pendidikan Kewarganegaraan')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Bahasa Inggris II')");
 
+            //SEMESTER 3
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Matematika Diskrit II')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Pemrograman Berorientasi Objek')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Basis Data')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Sistem Operasi')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Kewarganegaraan')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Metode Numerik')");
+            mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Desain & Analisis Algoritma')");
 
-//SEMESTER 3
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Matematika Diskrit II')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Pemrograman Berorientasi Objek')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Basis Data')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Sistem Operasi')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Kewarganegaraan')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Metode Numerik')");
-mysqli_query($conn, "INSERT INTO nodes (matkul) VALUES ('Desain & Analisis Algoritma')");
-
-
-mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('9', '4')");
-mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('12', '2')");
-mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('11', '7')");
-mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('13', '3')");
-mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('22', '12')");
-mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('19', '13')");
-mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('17', '12')");
-mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('16 ', '10')");
+            mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('9', '4')");
+            mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('12', '2')");
+            mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('11', '7')");
+            mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('13', '3')");
+            mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('22', '12')");
+            mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('19', '13')");
+            mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('17', '12')");
+            mysqli_query($conn, "INSERT INTO edges (node_id, neighbor_id) VALUES ('16 ', '10')");
 
             // Memeriksa koneksi
             if (!$conn) {
