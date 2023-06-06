@@ -29,6 +29,37 @@ mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node B', 'N
 mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node C', 'Node D')");
 mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node D', 'Node A')");
 
+//SEMESTER 1
+
+
+
+
+
+
+
+
+
+//SEMESTER 2
+
+
+
+
+
+
+
+
+
+//SEMESTER 3
+
+
+
+
+
+
+
+
+
+
 // Langkah 4: Mengambil Data
 $result = mysqli_query($conn, "SELECT * FROM nodes");
 

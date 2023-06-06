@@ -1,12 +1,12 @@
 smt 1
-1 0953112001
-2 0953124002
-3 0953123003
-4 0953123004
-5 0953123005
-6 0953112006
-7 0953123007
-8 0953112008
+1 0953112001 Agama                        2 
+2 0953124002 Konsep Pemrograman           4              
+3 0953123003 Sistem Digital               3          
+4 0953123004 Kalkulus I                   3      
+5 0953123005 Fisika                       3  
+6 0953112006 Bahasa Inggris               2          
+7 0953123007 Statistika & Probabilitas    3                     
+8 0953112008 Bahasa Indonesia             2            
 
 smt 2
 9  0953223009
