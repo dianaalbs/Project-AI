@@ -99,8 +99,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Menambahkan tepian ke graf
     $graph->addEdge('A', 'B');
     $graph->addEdge('B', 'C');
-    $graph->addEdge('B', 'D');
-    $graph->addEdge('C', 'D');
+    //$graph->addEdge('B', 'D');
+    //$graph->addEdge('C', 'D');
     $graph->addEdge('D', 'E');
 
     // Memanggil metode DFS dengan simpul awal yang dikirim melalui form
