@@ -90,11 +90,93 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $graph = new Graph();
 
     // Menambahkan simpul ke graf
-    $graph->addNode('A');
-    $graph->addNode('B');
-    $graph->addNode('C');
-    $graph->addNode('D');
-    $graph->addNode('E');
+    $graph->addNode('1');
+    $graph->addNode('2');
+    $graph->addNode('3');
+    $graph->addNode('4');
+    $graph->addNode('5');
+    $graph->addNode('6');
+    $graph->addNode('7');
+    $graph->addNode('8');
+
+    $graph->addNode('9');
+    $graph->addNode('10');
+    $graph->addNode('11');
+    $graph->addNode('12');
+    $graph->addNode('13');
+    $graph->addNode('14');
+    $graph->addNode('15');
+
+    $graph->addNode('16');
+    $graph->addNode('17');
+    $graph->addNode('18');
+    $graph->addNode('19');
+    $graph->addNode('20');
+    $graph->addNode('21');
+    $graph->addNode('22');
+
+    $graph->addNode('23');
+    $graph->addNode('24');
+    $graph->addNode('25');
+    $graph->addNode('26');
+    $graph->addNode('27');
+    $graph->addNode('28');
+
+    $graph->addNode('29');
+    $graph->addNode('30');
+    $graph->addNode('31');
+    $graph->addNode('32');
+    $graph->addNode('33');
+    $graph->addNode('34');
+    $graph->addNode('35');
+    $graph->addNode('36');
+    $graph->addNode('37');
+    $graph->addNode('38');
+    $graph->addNode('39');
+    $graph->addNode('40');
+    $graph->addNode('41');
+    $graph->addNode('42');
+    $graph->addNode('43');
+    $graph->addNode('44');
+    $graph->addNode('45');
+    $graph->addNode('46');
+    $graph->addNode('47');
+
+    $graph->addNode('48');
+    $graph->addNode('49');
+    $graph->addNode('50');
+    $graph->addNode('51');
+    $graph->addNode('52');
+    $graph->addNode('53');
+    $graph->addNode('54');
+    $graph->addNode('55');
+    $graph->addNode('56');
+    $graph->addNode('57');
+    $graph->addNode('58');
+    $graph->addNode('59');
+    $graph->addNode('60');
+    $graph->addNode('61');
+    $graph->addNode('62');
+    $graph->addNode('63');
+    $graph->addNode('64');
+    $graph->addNode('65');
+    $graph->addNode('66');
+
+    $graph->addNode('67');
+    $graph->addNode('68');
+    $graph->addNode('69');
+    $graph->addNode('70');
+    $graph->addNode('71');
+    $graph->addNode('72');
+    $graph->addNode('73');
+    $graph->addNode('74');
+    $graph->addNode('75');
+    $graph->addNode('76');
+    $graph->addNode('77');
+    $graph->addNode('78');
+    $graph->addNode('79');
+
+    $graph->addNode('80');
 
     // Menambahkan tepian ke graf  
     $graph->addEdge('A', 'B');
@@ -215,10 +297,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     });
     </script>
-
-    <form method="get" action="">
-        <input type="submit" value="Reset" />
-    </form>
 
 </body>
 </html>
