@@ -120,3 +120,416 @@ mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node A', 'N
 mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node B', 'Node C')");
 mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node C', 'Node D')");
 mysqli_query($conn, "INSERT INTO edges (from_node, to_node) VALUES ('Node D', 'Node A')");
+
+<h2>DFS Web App</h2>
+    <form method="POST" action="">
+        <label for="startNode1">Start Node 1:</label><br>
+        <select id="startNode1" name="startNode1">
+            <option>Pilih Matkul</option>
+            <option value="1">Agama</option>
+            <option value="2">Konsep Pemrograman </option>
+            <option value="3">Sistem Digital </option>
+            <option value="4">Kalkulus I</option>
+            <option value="5">Fisika </option>
+            <option value="6">Bahasa Inggris</option>
+            <option value="7">Statistika & Probabilitas</option>
+            <option value="8">Bahasa Indonesia </option>
+        </select><br>
+
+        <label for="startNode2">Start Node 2:</label><br>
+        <select id="startNode2" name="startNode2">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <label for="startNode3">Start Node 3:</label><br>
+        <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+
+        <input type="submit" value="DFS Traversal">
+    </form>
+
+    <?php
+    // Menampilkan pesan ketersambungan jika tersedia
+    if (isset($message)) {
+        echo '<div class="result">';
+        echo $message;
+        echo '</div>';
+    }
+    ?>
+
+    <script>
+    // Simpan nilai dropdown sebagai parameter URL saat dipilih
+    document.getElementById("startNode1").addEventListener("change", function() {
+        var selectedValue = this.value;
+        var url = new URL(window.location.href);
+        url.searchParams.set("dropdownValue", selectedValue);
+        window.history.replaceState({}, '', url);
+    });
+
+    // Atur nilai dropdown saat halaman dimuat ulang
+    document.addEventListener("DOMContentLoaded", function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var dropdownValue = urlParams.get("dropdownValue");
+        if (dropdownValue) {
+        document.getElementById("startNode1").value = dropdownValue;
+        }
+    });
+    </script>
+
+
+// Memanggil metode DFS dengan simpul awal yang dikirim melalui form
+    $startNode1 = $_POST['1'];
+    $startNode2 = $_POST['2'];
+    $startNode3 = $_POST['3 '];
+    $startNode1 = $_POST['4'];
+    $startNode2 = $_POST['5'];
+    $startNode3 = $_POST['6'];
+    $startNode1 = $_POST['7'];
+    $startNode2 = $_POST['8'];
+
+    $startNode3 = $_POST['9'];
+    $startNode1 = $_POST['10'];
+    $startNode2 = $_POST['11'];
+    $startNode3 = $_POST['12'];
+    $startNode1 = $_POST['13'];
+    $startNode2 = $_POST['14'];
+    $startNode3 = $_POST['15'];
+
+    $startNode1 = $_POST['16'];
+    $startNode2 = $_POST['17'];
+    $startNode3 = $_POST['18'];
+    $startNode1 = $_POST['19'];
+    $startNode2 = $_POST['20'];
+    $startNode3 = $_POST['21'];
+    $startNode1 = $_POST['22'];
+
+    $startNode2 = $_POST['23'];
+    $startNode3 = $_POST['24'];
+    $startNode1 = $_POST['25'];
+    $startNode2 = $_POST['26'];
+    $startNode3 = $_POST['27'];
+    $startNode1 = $_POST['28'];
+
+    $startNode2 = $_POST['29'];
+    $startNode3 = $_POST['30'];
+    $startNode2 = $_POST['31'];
+    $startNode3 = $_POST['32'];
+
+    $startNode1 = $_POST['33'];
+    $startNode2 = $_POST['34'];
+    $startNode3 = $_POST['35'];
+    $startNode1 = $_POST['36'];
+
+    $startNode2 = $_POST['37'];
+    $startNode3 = $_POST['38'];
+    $startNode1 = $_POST['39'];
+    $startNode2 = $_POST['40'];
+    $startNode3 = $_POST['41'];
+    $startNode1 = $_POST['42'];
+    $startNode2 = $_POST['43'];
+    $startNode3 = $_POST['44'];
+    $startNode1 = $_POST['45'];
+    $startNode2 = $_POST['46'];
+    $startNode3 = $_POST['47'];
+
+    $startNode1 = $_POST['48'];
+    $startNode2 = $_POST['49'];
+    $startNode3 = $_POST['50'];
+
+    $startNode2 = $_POST['51'];
+    $startNode3 = $_POST['52'];
+    $startNode1 = $_POST['53'];
+    $startNode2 = $_POST['54'];
+
+    $startNode3 = $_POST['55'];
+    $startNode1 = $_POST['56'];
+    $startNode2 = $_POST['57'];
+    $startNode3 = $_POST['58'];
+    $startNode1 = $_POST['59'];
+    $startNode2 = $_POST['60'];
+    $startNode3 = $_POST['61'];
+    $startNode1 = $_POST['62'];
+    $startNode2 = $_POST['63'];
+    $startNode3 = $_POST['64'];
+    $startNode1 = $_POST['65'];
+    $startNode2 = $_POST['66'];
+
+    $startNode3 = $_POST['67'];
+    $startNode1 = $_POST['68'];
+    $startNode2 = $_POST['69'];
+
+    $startNode3 = $_POST['70'];
+    $startNode2 = $_POST['70'];
+    $startNode3 = $_POST['71'];
+    $startNode1 = $_POST['72'];
+    $startNode2 = $_POST['73'];
+
+    $startNode3 = $_POST['74'];
+    $startNode1 = $_POST['75'];
+    $startNode2 = $_POST['76'];
+    $startNode3 = $_POST['77'];
+    $startNode1 = $_POST['78'];
+    $startNode2 = $_POST['79'];
+
+    $startNode3 = $_POST['80'];
