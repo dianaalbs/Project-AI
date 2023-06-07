@@ -186,10 +186,101 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $graph->addEdge('D', 'E');
 
     // Memanggil metode DFS dengan simpul awal yang dikirim melalui form
-    $startNode1 = $_POST['startNode1'];
-    $startNode2 = $_POST['startNode2'];
-    $startNode3 = $_POST['startNode3'];
+    $startNode1 = $_POST['1'];
+    $startNode2 = $_POST['2'];
+    $startNode3 = $_POST['3 '];
+    $startNode1 = $_POST['4'];
+    $startNode2 = $_POST['5'];
+    $startNode3 = $_POST['6'];
+    $startNode1 = $_POST['7'];
+    $startNode2 = $_POST['8'];
 
+    $startNode3 = $_POST['9'];
+    $startNode1 = $_POST['10'];
+    $startNode2 = $_POST['11'];
+    $startNode3 = $_POST['12'];
+    $startNode1 = $_POST['13'];
+    $startNode2 = $_POST['14'];
+    $startNode3 = $_POST['15'];
+
+    $startNode1 = $_POST['16'];
+    $startNode2 = $_POST['17'];
+    $startNode3 = $_POST['18'];
+    $startNode1 = $_POST['19'];
+    $startNode2 = $_POST['20'];
+    $startNode3 = $_POST['21'];
+    $startNode1 = $_POST['22'];
+
+    $startNode2 = $_POST['23'];
+    $startNode3 = $_POST['24'];
+    $startNode1 = $_POST['25'];
+    $startNode2 = $_POST['26'];
+    $startNode3 = $_POST['27'];
+    $startNode1 = $_POST['28'];
+
+    $startNode2 = $_POST['29'];
+    $startNode3 = $_POST['30'];
+    $startNode2 = $_POST['31'];
+    $startNode3 = $_POST['32'];
+
+    $startNode1 = $_POST['33'];
+    $startNode2 = $_POST['34'];
+    $startNode3 = $_POST['35'];
+    $startNode1 = $_POST['36'];
+
+    $startNode2 = $_POST['37'];
+    $startNode3 = $_POST['38'];
+    $startNode1 = $_POST['39'];
+    $startNode2 = $_POST['40'];
+    $startNode3 = $_POST['41'];
+    $startNode1 = $_POST['42'];
+    $startNode2 = $_POST['43'];
+    $startNode3 = $_POST['44'];
+    $startNode1 = $_POST['45'];
+    $startNode2 = $_POST['46'];
+    $startNode3 = $_POST['47'];
+
+    $startNode1 = $_POST['48'];
+    $startNode2 = $_POST['49'];
+    $startNode3 = $_POST['50'];
+
+    $startNode2 = $_POST['51'];
+    $startNode3 = $_POST['52'];
+    $startNode1 = $_POST['53'];
+    $startNode2 = $_POST['54'];
+
+    $startNode3 = $_POST['55'];
+    $startNode1 = $_POST['56'];
+    $startNode2 = $_POST['57'];
+    $startNode3 = $_POST['58'];
+    $startNode1 = $_POST['59'];
+    $startNode2 = $_POST['60'];
+    $startNode3 = $_POST['61'];
+    $startNode1 = $_POST['62'];
+    $startNode2 = $_POST['63'];
+    $startNode3 = $_POST['64'];
+    $startNode1 = $_POST['65'];
+    $startNode2 = $_POST['66'];
+
+    $startNode3 = $_POST['67'];
+    $startNode1 = $_POST['68'];
+    $startNode2 = $_POST['69'];
+
+    $startNode3 = $_POST['70'];
+    $startNode2 = $_POST['70'];
+    $startNode3 = $_POST['71'];
+    $startNode1 = $_POST['72'];
+    $startNode2 = $_POST['73'];
+
+    $startNode3 = $_POST['74'];
+    $startNode1 = $_POST['75'];
+    $startNode2 = $_POST['76'];
+    $startNode3 = $_POST['77'];
+    $startNode1 = $_POST['78'];
+    $startNode2 = $_POST['79'];
+
+    $startNode3 = $_POST['80'];
+    
     // Memeriksa ketersambungan antara simpul-simpul awal yang dipilih
     $isConnected1 = $graph->isConnected($startNode1, $startNode2);
     $isConnected2 = $graph->isConnected($startNode1, $startNode3);
