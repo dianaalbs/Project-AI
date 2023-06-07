@@ -96,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $graph->addNode('D');
     $graph->addNode('E');
 
-    // Menambahkan tepian ke graf
+    // Menambahkan tepian ke graf  
     $graph->addEdge('A', 'B');
     $graph->addEdge('B', 'C');
     //$graph->addEdge('B', 'D');
@@ -157,6 +157,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form method="POST" action="">
         <label for="startNode1">Start Node 1:</label><br>
         <select id="startNode1" name="startNode1">
+            <option>Pilih Matkul</option>
             <option value="A">A</option>
             <option value="B">B</option>
             <option value="C">C</option>
@@ -166,6 +167,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <label for="startNode2">Start Node 2:</label><br>
         <select id="startNode2" name="startNode2">
+            <option>Pilih Matkul</option>
             <option value="A">A</option>
             <option value="B">B</option>
             <option value="C">C</option>
@@ -175,6 +177,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <label for="startNode3">Start Node 3:</label><br>
         <select id="startNode3" name="startNode3">
+            <option>Pilih Matkul</option>
             <option value="A">A</option>
             <option value="B">B</option>
             <option value="C">C</option>
