@@ -197,5 +197,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     ?>
 
+    <script>
+    // Simpan nilai dropdown sebagai parameter URL saat dipilih
+    document.getElementById("startNode1").addEventListener("change", function() {
+        var selectedValue = this.value;
+        var url = new URL(window.location.href);
+        url.searchParams.set("dropdownValue", selectedValue);
+        window.history.replaceState({}, '', url);
+    });
+
+    // Atur nilai dropdown saat halaman dimuat ulang
+    document.addEventListener("DOMContentLoaded", function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var dropdownValue = urlParams.get("dropdownValue");
+        if (dropdownValue) {
+        document.getElementById("startNode1").value = dropdownValue;
+        }
+    });
+    </script>
+
 </body>
 </html>
