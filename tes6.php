@@ -1524,23 +1524,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $isConnected1176 = $graph->isConnected($startNode48, $startNode49);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // Membuat pesan yang sesuai berdasarkan hasil ketersambungan
     if ($isConnected1 && $isConnected2 && $isConnected3) {
         $message = "Semua simpul awal terhubung!";
