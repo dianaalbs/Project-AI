@@ -298,7 +298,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $startNode46 = $_POST['startNode46'];
     $startNode47 = $_POST['startNode47'];
     $startNode48 = $_POST['startNode48'];
-    
+    $startNode48 = $_POST['startNode49'];
+
     // Memeriksa ketersambungan antara simpul-simpul awal yang dipilih
     $isConnected1 = $graph->isConnected($startNode1, $startNode2);
     $isConnected2 = $graph->isConnected($startNode1, $startNode3);
@@ -1525,7 +1526,55 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $isConnected1176 = $graph->isConnected($startNode48, $startNode49);
 
     // Membuat pesan yang sesuai berdasarkan hasil ketersambungan
-    if ($isConnected1 && $isConnected2 && $isConnected3) {
+    if ($isConnected1 && 
+        $isConnected2 && 
+        $isConnected3 &&
+        $isConnected4 &&
+        $isConnected5 &&
+        $isConnected6 &&
+        $isConnected7 &&
+        $isConnected8 &&
+        $isConnected9 &&
+        $isConnected10 &&
+        $isConnected11 &&
+        $isConnected12 &&
+        $isConnected13 &&
+        $isConnected14 &&
+        $isConnected15 &&
+        $isConnected16 &&
+        $isConnected17 &&
+        $isConnected18 &&
+        $isConnected19 &&
+        $isConnected20 &&
+        $isConnected21 &&
+        $isConnected22 &&
+        $isConnected23 &&
+        $isConnected24 &&
+        $isConnected25 &&
+        $isConnected26 &&
+        $isConnected27 &&
+        $isConnected28 &&
+        $isConnected29 &&
+        $isConnected30 &&
+        $isConnected31 &&
+        $isConnected32 &&
+        $isConnected33 &&
+        $isConnected34 &&
+        $isConnected35 &&
+        $isConnected36 &&
+        $isConnected37 &&
+        $isConnected38 &&
+        $isConnected39 &&
+        $isConnected40 &&
+        $isConnected41 &&
+        $isConnected42 &&
+        $isConnected43 &&
+        $isConnected44 &&
+        $isConnected45 &&
+        $isConnected46 &&
+        $isConnected47 &&
+        $isConnected48 &&
+        $isConnected49){
         $message = "Semua simpul awal terhubung!";
     } else {
         $message = "Tidak semua simpul awal terhubung!";
