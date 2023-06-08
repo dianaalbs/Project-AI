@@ -298,7 +298,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $startNode46 = $_POST['startNode46'];
     $startNode47 = $_POST['startNode47'];
     $startNode48 = $_POST['startNode48'];
-    $startNode48 = $_POST['startNode49'];
+    $startNode49 = $_POST['startNode49'];
 
     // Memeriksa ketersambungan antara simpul-simpul awal yang dipilih
     $isConnected1 = $graph->isConnected($startNode1, $startNode2);
@@ -1677,31 +1677,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <option value="16">Matematika Diskrit II</option>
             </select>
 
+            <label for="startNode17"><label><br>
             <select id="startNode17" name="startNode17">
                 <option>Pilih Matkul</option>
                 <option value="17">Pemrograman Berorientasi Objek</option>
             </select>
 
+            <label for="startNode18"><label><br>
             <select id="startNode18" name="startNode18">
                 <option>Pilih Matkul</option>
                 <option value="18">Basis Data</option>
             </select>
 
+            <label for="startNode19"><label><br>
             <select id="startNode19" name="startNode19">
                 <option>Pilih Matkul</option>
                 <option value="19">Sistem Operasi</option>
             </select>
 
+            <label for="startNode20"><label><br>
             <select id="startNod20" name="startNode20">
                 <option>Pilih Matkul</option>
                 <option value="20">Kewarganegaraan</option>
             </select>
 
+            <label for="startNode21"><label><br>
             <select id="startNode21" name="startNode21">
                 <option>Pilih Matkul</option>
                 <option value="21">Metode Numerik </option>
             </select>
 
+            <label for="startNode22"><label><br>
             <select id="startNode22" name="startNode22">
                 <option>Pilih Matkul</option>
                 <option value="22">Desain & Analisis Algoritma</option>
@@ -1714,16 +1720,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                  <option value="29">Data Mining</option>
              </select>
 
+             <label for="startNode30"><label><br>
              <select id="startNode30" name="startNode30">
                  <option>Pilih Matkul</option>
                  <option value="30">Interaksi Manusia & Komputer</option>
              </select>
 
+             <label for="startNode31"><label><br>
              <select id="startNode31" name="startNode31">
                  <option>Pilih Matkul</option>
                  <option value="31">Sistem Terdistribusi</option>
              </select>
 
+             <label for="startNode32"><label><br>
              <select id="startNode32" name="startNode32">
                  <option>Pilih Matkul</option>
                  <option value="32">Pengolahan Citra Digital</option>
@@ -1758,20 +1767,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
              </select>
 
             <!--Pilihan2 Semester 5-->
-             <select id="startNode35" name="startNode35">
-                 <option>Pilih Matkul</option>
-                 <option value="37">Logika Samar</option>
-                 <option value="38">Riset Operasi</option>
-                 <option value="39">Komputasi Grid</option>
-                 <option value="40">Kriptografi</option>
-                 <option value="41">Wireless & Mobile Computing</option>
-                 <option value="42">Biometric</option>
-                 <option value="43">Teori Game</option>
-                 <option value="44">Manajemen Sistem Informasi</option>
-                 <option value="45">Metode Formal</option>
-                 <option value="46">Model-Based Programming</option>
-                 <option value="47">Robotika</option>
-             </select><br>
+            <label for="startNode35"><label><br>
+            <select id="startNode35" name="startNode35">
+                <option>Pilih Matkul</option>
+                <option value="37">Logika Samar</option>
+                <option value="38">Riset Operasi</option>
+                <option value="39">Komputasi Grid</option>
+                <option value="40">Kriptografi</option>
+                <option value="41">Wireless & Mobile Computing</option>
+                <option value="42">Biometric</option>
+                <option value="43">Teori Game</option>
+                <option value="44">Manajemen Sistem Informasi</option>
+                <option value="45">Metode Formal</option>
+                <option value="46">Model-Based Programming</option>
+                <option value="47">Robotika</option>
+            </select><br>
 
             <!--Semester 7-->
             <label for="startNode43">Semester 7:</label><br>
@@ -1815,6 +1825,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </select>
 
             <!--Pilihan Semester 7-->
+            <label for="startNode48"><label><br>
             <select id="startNode48" name="startNode48">
                 <option>Pilih Matkul</option>
                 <option value="74">E-commerce</option>
@@ -1877,26 +1888,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <option value="23">Jaringan Komputer</option>
             </select>
 
+            <label for="startNode24"><label><br>
             <select id="startNode24" name="startNode24">
                 <option>Pilih Matkul</option>
                 <option value="24">Pemrograman Web</option>
             </select>
 
+            <label for="startNode25"><label><br>
             <select id="startNode25" name="startNode25">
                 <option>Pilih Matkul</option>
                 <option value="25">Kecerdasan Buatan</option>
             </select>
 
+            <label for="startNode26"><label><br>
             <select id="startNode26" name="startNode26">
                 <option>Pilih Matkul</option>
                 <option value="26">Rekayasa Perangkat Lunak</option>
             </select>
 
+            <label for="startNode27"><label><br>
             <select id="startNode27" name="startNode27">
                 <option>Pilih Matkul</option>
                 <option value="27">Pengembangan Aplikasi Bergerak</option>
             </select>
 
+            <label for="startNode28"><label><br>
             <select id="startNode28" name="startNode28">
                 <option>Pilih Matkul</option>
                 <option value="28">Teori Bahasa & Automata</option>
@@ -1910,12 +1926,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </select>
 
         <!--Semester 6-->
+            <label for="startNode37"><label><br>
             <select id="startNode37" name="startNode37">
                 <option>Pilih Matkul</option>
                 <option value="49">Magang</option>
             </select>
 
         <!--Semester 6-->
+            <label for="startNode38"><label><br>
             <select id="startNode38" name="startNode38">
                 <option>Pilih Matkul</option>
                 <option value="50">Proyek Perangkat Lunak</option>
@@ -1951,6 +1969,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </select>
 
         <!--Pilihan2 Semester 6-->
+            <label for="startNode41"><label><br>
             <select id="startNode41" name="startNode41">
             <option>Pilih Matkul</option>
                 <option value="55">Manajemen Proyek</option>
@@ -1968,6 +1987,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </select>
 
             <!--Pilihan3 Semester 6-->
+            <label for="startNode42"><label><br>
             <select id="startNode42" name="startNode42">
                 <option>Pilih Matkul</option>
                 <option value="55">Manajemen Proyek</option>
@@ -1994,8 +2014,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
 
-<input type="submit" value="Check">
-
+    <input type="submit" value="Check">
 </form>
 
     <?php
@@ -2025,6 +2044,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     });
     </script>
+
+    <form method="get" action="">
+        <input type="submit" value="Reset" />
+    </form>
 
 </body>
 </html>
