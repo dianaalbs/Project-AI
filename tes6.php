@@ -3626,35 +3626,466 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <h2>DFS Web App</h2>
+    
+    <!--Semester 1-->
     <form method="POST" action="">
-        <label for="startNode1">Start Node 1:</label><br>
+        <label for="startNode1">Semseter 1:</label><br>
         <select id="startNode1" name="startNode1">
             <option>Pilih Matkul</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
-            <option value="E">E</option>
+            <option value="1">Agama</option>
+            <option value="2">Konsep Pemrograman </option>
+            <option value="3">Sistem Digital </option>
+            <option value="4">Kalkulus I</option>
+            <option value="5">Fisika </option>
+            <option value="6">Bahasa Inggris</option>
+            <option value="7">Statistika & Probabilitas</option>
+            <option value="8">Bahasa Indonesia </option>
         </select><br>
 
-        <label for="startNode2">Start Node 2:</label><br>
+        <label for="startNode2">Semseter 1:</label><br>
         <select id="startNode2" name="startNode2">
             <option>Pilih Matkul</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
-            <option value="E">E</option>
+            <option value="1">Agama</option>
+            <option value="2">Konsep Pemrograman </option>
+            <option value="3">Sistem Digital </option>
+            <option value="4">Kalkulus I</option>
+            <option value="5">Fisika </option>
+            <option value="6">Bahasa Inggris</option>
+            <option value="7">Statistika & Probabilitas</option>
+            <option value="8">Bahasa Indonesia </option>
         </select><br>
 
-        <label for="startNode3">Start Node 3:</label><br>
+        <label for="startNode3">Semseter 1:</label><br>
         <select id="startNode3" name="startNode3">
             <option>Pilih Matkul</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
-            <option value="E">E</option>
+            <option value="1">Agama</option>
+            <option value="2">Konsep Pemrograman </option>
+            <option value="3">Sistem Digital </option>
+            <option value="4">Kalkulus I</option>
+            <option value="5">Fisika </option>
+            <option value="6">Bahasa Inggris</option>
+            <option value="7">Statistika & Probabilitas</option>
+            <option value="8">Bahasa Indonesia </option>
+        </select><br>
+
+        <label for="startNode4">Semseter 1:</label><br>
+        <select id="startNode4" name="startNode4">
+            <option>Pilih Matkul</option>    
+            <option value="1">Agama</option>
+            <option value="2">Konsep Pemrograman </option>
+            <option value="3">Sistem Digital </option>
+            <option value="4">Kalkulus I</option>
+            <option value="5">Fisika </option>
+            <option value="6">Bahasa Inggris</option>
+            <option value="7">Statistika & Probabilitas</option>
+            <option value="8">Bahasa Indonesia </option>
+        </select><br>
+
+        <label for="startNode5">Semseter 1:</label><br>
+        <select id="startNode5" name="startNode5">
+            <option>Pilih Matkul</option>
+            <option value="1">Agama</option>
+            <option value="2">Konsep Pemrograman </option>
+            <option value="3">Sistem Digital </option>
+            <option value="4">Kalkulus I</option>
+            <option value="5">Fisika </option>
+            <option value="6">Bahasa Inggris</option>
+            <option value="7">Statistika & Probabilitas</option>
+            <option value="8">Bahasa Indonesia </option>
+        </select><br>
+
+        <label for="startNode6">Semseter 1:</label><br>
+        <select id="startNode6" name="startNode6">
+            <option>Pilih Matkul</option>
+            <option value="1">Agama</option>
+            <option value="2">Konsep Pemrograman </option>
+            <option value="3">Sistem Digital </option>
+            <option value="4">Kalkulus I</option>
+            <option value="5">Fisika </option>
+            <option value="6">Bahasa Inggris</option>
+            <option value="7">Statistika & Probabilitas</option>
+            <option value="8">Bahasa Indonesia </option>
+        </select><br>
+
+        <label for="startNode7">Semseter 1:</label><br>
+        <select id="startNode7" name="startNode7">
+            <option>Pilih Matkul</option>
+            <option value="1">Agama</option>
+            <option value="2">Konsep Pemrograman </option>
+            <option value="3">Sistem Digital </option>
+            <option value="4">Kalkulus I</option>
+            <option value="5">Fisika </option>
+            <option value="6">Bahasa Inggris</option>
+            <option value="7">Statistika & Probabilitas</option>
+            <option value="8">Bahasa Indonesia </option>
+        </select><br>
+
+        <label for="startNode8">Semseter 1:</label><br>
+        <select id="startNode8" name="startNode8">
+            <option>Pilih Matkul</option>
+            <option value="1">Agama</option>
+            <option value="2">Konsep Pemrograman </option>
+            <option value="3">Sistem Digital </option>
+            <option value="4">Kalkulus I</option>
+            <option value="5">Fisika </option>
+            <option value="6">Bahasa Inggris</option>
+            <option value="7">Statistika & Probabilitas</option>
+            <option value="8">Bahasa Indonesia </option>
+        
+    <!--Semester 2-->
+        <label for="startNode9">Semseter 2:</label><br>
+        <select id="startNode9" name="startNode9">
+            <option>Pilih Matkul</option>
+            <option value="9">Kalkulus II</option>
+            <option value="10">Metematika Diskrit I</option>
+            <option value="11">Aljabar Linier</option>
+            <option value="12">Struktur Data & Algoritma</option>
+            <option value="13">Organisasi Sistem Komputer</option>
+            <option value="14">Pendidikan Kewarganegaraan</option>
+            <option value="15">Bahasa Inggris II</option>
+        </select><br>
+
+        <label for="startNode10">Semseter 2:</label><br>
+        <select id="startNode10" name="startNode10">
+            <option>Pilih Matkul</option>
+            <option value="9">Kalkulus II</option>
+            <option value="10">Metematika Diskrit I</option>
+            <option value="11">Aljabar Linier</option>
+            <option value="12">Struktur Data & Algoritma</option>
+            <option value="13">Organisasi Sistem Komputer</option>
+            <option value="14">Pendidikan Kewarganegaraan</option>
+            <option value="15">Bahasa Inggris II</option>
+        </select><br>
+
+        <label for="startNode11">Semseter 2:</label><br>
+        <select id="startNode11" name="startNode">
+            <option>Pilih Matkul</option>
+            <option value="9">Kalkulus II</option>
+            <option value="10">Metematika Diskrit I</option>
+            <option value="11">Aljabar Linier</option>
+            <option value="12">Struktur Data & Algoritma</option>
+            <option value="13">Organisasi Sistem Komputer</option>
+            <option value="14">Pendidikan Kewarganegaraan</option>
+            <option value="15">Bahasa Inggris II</option>
+        </select><br>
+
+        <label for="startNode12">Semseter 2:</label><br>
+        <select id="startNode12" name="startNode2">
+            <option>Pilih Matkul</option>
+            <option value="9">Kalkulus II</option>
+            <option value="10">Metematika Diskrit I</option>
+            <option value="11">Aljabar Linier</option>
+            <option value="12">Struktur Data & Algoritma</option>
+            <option value="13">Organisasi Sistem Komputer</option>
+            <option value="14">Pendidikan Kewarganegaraan</option>
+            <option value="15">Bahasa Inggris II</option>
+        </select><br>
+
+        <label for="startNode13">Semseter 2:</label><br>
+        <select id="startNode13" name="startNode13">
+            <option>Pilih Matkul</option>
+            <option value="9">Kalkulus II</option>
+            <option value="10">Metematika Diskrit I</option>
+            <option value="11">Aljabar Linier</option>
+            <option value="12">Struktur Data & Algoritma</option>
+            <option value="13">Organisasi Sistem Komputer</option>
+            <option value="14">Pendidikan Kewarganegaraan</option>
+            <option value="15">Bahasa Inggris II</option>
+        </select><br>
+
+        <label for="startNode14">Semseter 2:</label><br>
+        <select id="startNode14" name="startNode14">
+            <option>Pilih Matkul</option>
+            <option value="9">Kalkulus II</option>
+            <option value="10">Metematika Diskrit I</option>
+            <option value="11">Aljabar Linier</option>
+            <option value="12">Struktur Data & Algoritma</option>
+            <option value="13">Organisasi Sistem Komputer</option>
+            <option value="14">Pendidikan Kewarganegaraan</option>
+            <option value="15">Bahasa Inggris II</option>
+        </select><br>
+
+        <label for="startNode15">Semseter 2:</label><br>
+        <select id="startNode15" name="startNode15">
+            <option>Pilih Matkul</option>
+            <option value="9">Kalkulus II</option>
+            <option value="10">Metematika Diskrit I</option>
+            <option value="11">Aljabar Linier</option>
+            <option value="12">Struktur Data & Algoritma</option>
+            <option value="13">Organisasi Sistem Komputer</option>
+            <option value="14">Pendidikan Kewarganegaraan</option>
+            <option value="15">Bahasa Inggris II</option>
+        </select><br>
+
+    <!--Semester 3-->
+        <label for="startNode16">Semseter 3:</label><br>
+        <select id="startNode16" name="startNode6">
+            <option>Pilih Matkul</option>
+            <option value="16">Matematika Diskrit II</option>
+            <option value="17">Pemrograman Berorientasi Objek</option>
+            <option value="18">Basis Data</option>
+            <option value="19">Sistem Operasi</option>
+            <option value="20">Kewarganegaraan</option>
+            <option value="21">Metode Numerik </option>
+            <option value="22">Desain & Analisis Algoritma</option>
+        </select><br>
+
+        <label for="startNode17">Semseter 3:</label><br>
+        <select id="startNode17" name="startNode17">
+            <option>Pilih Matkul</option>
+            <option value="16">Matematika Diskrit II</option>
+            <option value="17">Pemrograman Berorientasi Objek</option>
+            <option value="18">Basis Data</option>
+            <option value="19">Sistem Operasi</option>
+            <option value="20">Kewarganegaraan</option>
+            <option value="21">Metode Numerik </option>
+            <option value="22">Desain & Analisis Algoritma</option>
+        </select><br>
+
+        <label for="startNode18">Semseter 3:</label><br>
+        <select id="startNode18" name="startNode18">
+            <option>Pilih Matkul</option>
+            <option value="16">Matematika Diskrit II</option>
+            <option value="17">Pemrograman Berorientasi Objek</option>
+            <option value="18">Basis Data</option>
+            <option value="19">Sistem Operasi</option>
+            <option value="20">Kewarganegaraan</option>
+            <option value="21">Metode Numerik </option>
+            <option value="22">Desain & Analisis Algoritma</option>
+        </select><br>
+
+        <label for="startNode19">Semseter 3:</label><br>
+        <select id="startNode19" name="startNode19">
+            <option>Pilih Matkul</option>
+            <option value="16">Matematika Diskrit II</option>
+            <option value="17">Pemrograman Berorientasi Objek</option>
+            <option value="18">Basis Data</option>
+            <option value="19">Sistem Operasi</option>
+            <option value="20">Kewarganegaraan</option>
+            <option value="21">Metode Numerik </option>
+            <option value="22">Desain & Analisis Algoritma</option>
+        </select><br>
+
+        <label for="startNod20">Semseter 3:</label><br>
+        <select id="startNod20" name="startNode20">
+            <option>Pilih Matkul</option>
+            <option value="16">Matematika Diskrit II</option>
+            <option value="17">Pemrograman Berorientasi Objek</option>
+            <option value="18">Basis Data</option>
+            <option value="19">Sistem Operasi</option>
+            <option value="20">Kewarganegaraan</option>
+            <option value="21">Metode Numerik </option>
+            <option value="22">Desain & Analisis Algoritma</option>
+        </select><br>
+
+        <label for="startNode21">Semseter 3:</label><br>
+        <select id="startNode21" name="startNode21">
+            <option>Pilih Matkul</option>
+            <option value="16">Matematika Diskrit II</option>
+            <option value="17">Pemrograman Berorientasi Objek</option>
+            <option value="18">Basis Data</option>
+            <option value="19">Sistem Operasi</option>
+            <option value="20">Kewarganegaraan</option>
+            <option value="21">Metode Numerik </option>
+            <option value="22">Desain & Analisis Algoritma</option>
+        </select><br>
+
+        <label for="startNode22">Semseter 3:</label><br>
+        <select id="startNode22" name="startNode22">
+            <option>Pilih Matkul</option>
+            <option value="16">Matematika Diskrit II</option>
+            <option value="17">Pemrograman Berorientasi Objek</option>
+            <option value="18">Basis Data</option>
+            <option value="19">Sistem Operasi</option>
+            <option value="20">Kewarganegaraan</option>
+            <option value="21">Metode Numerik </option>
+            <option value="22">Desain & Analisis Algoritma</option>
+        </select><br>
+
+    <!--Semester 4-->
+        <label for="startNode23">Semester 4:</label><br>
+        <select id="startNode23" name="startNode23">
+            <option>Pilih Matkul</option>
+            <option value="23">Jaringan Komputer</option>
+            <option value="24">Pemrograman Web</option>
+            <option value="25">Kecerdasan Buatan</option>
+            <option value="26">Rekayasa Perangkat Lunak</option>
+            <option value="27">Pengembangan Aplikasi Bergerak</option>
+            <option value="28">Teori Bahasa & Automata</option>
+        </select><br>
+
+        <label for="startNode24">Semester 4:</label><br>
+        <select id="startNode24" name="startNode24">
+            <option>Pilih Matkul</option>
+            <option value="23">Jaringan Komputer</option>
+            <option value="24">Pemrograman Web</option>
+            <option value="25">Kecerdasan Buatan</option>
+            <option value="26">Rekayasa Perangkat Lunak</option>
+            <option value="27">Pengembangan Aplikasi Bergerak</option>
+            <option value="28">Teori Bahasa & Automata</option>
+        </select><br>
+
+        <label for="startNode24">Semester 4:</label><br>
+        <select id="startNode24" name="startNode24">
+            <option>Pilih Matkul</option>
+            <option value="23">Jaringan Komputer</option>
+            <option value="24">Pemrograman Web</option>
+            <option value="25">Kecerdasan Buatan</option>
+            <option value="26">Rekayasa Perangkat Lunak</option>
+            <option value="27">Pengembangan Aplikasi Bergerak</option>
+            <option value="28">Teori Bahasa & Automata</option>
+        </select><br>
+
+        <label for="startNode25">Semester 4:</label><br>
+        <select id="startNode25" name="startNode25">
+            <option>Pilih Matkul</option>
+            <option value="23">Jaringan Komputer</option>
+            <option value="24">Pemrograman Web</option>
+            <option value="25">Kecerdasan Buatan</option>
+            <option value="26">Rekayasa Perangkat Lunak</option>
+            <option value="27">Pengembangan Aplikasi Bergerak</option>
+            <option value="28">Teori Bahasa & Automata</option>
+        </select><br>
+
+        <label for="startNode26">Semester 4:</label><br>
+        <select id="startNode26" name="startNode26">
+            <option>Pilih Matkul</option>
+            <option value="23">Jaringan Komputer</option>
+            <option value="24">Pemrograman Web</option>
+            <option value="25">Kecerdasan Buatan</option>
+            <option value="26">Rekayasa Perangkat Lunak</option>
+            <option value="27">Pengembangan Aplikasi Bergerak</option>
+            <option value="28">Teori Bahasa & Automata</option>
+        </select><br>
+
+        <label for="startNode27">Semester 4:</label><br>
+        <select id="startNode27" name="startNode27">
+            <option>Pilih Matkul</option>
+            <option value="23">Jaringan Komputer</option>
+            <option value="24">Pemrograman Web</option>
+            <option value="25">Kecerdasan Buatan</option>
+            <option value="26">Rekayasa Perangkat Lunak</option>
+            <option value="27">Pengembangan Aplikasi Bergerak</option>
+            <option value="28">Teori Bahasa & Automata</option>
+        </select><br>
+
+        <label for="startNode28">Semester 4:</label><br>
+        <select id="startNode28" name="startNode28">
+            <option>Pilih Matkul</option>
+            <option value="23">Jaringan Komputer</option>
+            <option value="24">Pemrograman Web</option>
+            <option value="25">Kecerdasan Buatan</option>
+            <option value="26">Rekayasa Perangkat Lunak</option>
+            <option value="27">Pengembangan Aplikasi Bergerak</option>
+            <option value="28">Teori Bahasa & Automata</option>
+        </select><br>
+
+    <!--Semester 5-->
+        <label for="startNode29">Semester 5:</label><br>
+        <select id="startNode29" name="startNode29">
+            <option>Pilih Matkul</option>
+            <option value="29">Data Mining</option>
+            <option value="30">Interaksi Manusia & Komputer</option>
+            <option value="31">Sistem Terdistribusi</option>
+            <option value="32">Sistem Terdistribusi</option>
+        </select><br>
+
+        <label for="startNode30">Semester 5:</label><br>
+        <select id="startNode30" name="startNode30">
+            <option>Pilih Matkul</option>
+            <option value="29">Data Mining</option>
+            <option value="30">Interaksi Manusia & Komputer</option>
+            <option value="31">Sistem Terdistribusi</option>
+            <option value="32">Sistem Terdistribusi</option>
+        </select><br>
+
+        <label for="startNode31">Semester 5:</label><br>
+        <select id="startNode31" name="startNode31">
+            <option>Pilih Matkul</option>
+            <option value="29">Data Mining</option>
+            <option value="30">Interaksi Manusia & Komputer</option>
+            <option value="31">Sistem Terdistribusi</option>
+            <option value="32">Sistem Terdistribusi</option>
+        </select><br>
+
+        <label for="startNode32">Semester 5:</label><br>
+        <select id="startNode32" name="startNode32">
+            <option>Pilih Matkul</option>
+            <option value="29">Data Mining</option>
+            <option value="30">Interaksi Manusia & Komputer</option>
+            <option value="31">Sistem Terdistribusi</option>
+            <option value="32">Sistem Terdistribusi</option>
+        </select><br>
+
+    <!--Wajib Minat Semester 5-->
+        <label for="startNode33">Wajib Minat Semester 5:</label><br>
+        <select id="startNode33" name="startNode33">
+            <option>Pilih Matkul</option>
+            <option value="33">Machine Learning</option>
+            <option value="34">Pengolahan Sinyal Digital</option>
+            <option value="35">Manajemen Jaringan</option>
+            <option value="36">Basis Data Lanjut</option>
+        </select><br>
+
+        <label for="startNode34">Wajib Minat Semester 5:</label><br>
+        <select id="startNode34" name="startNode34">
+            <option>Pilih Matkul</option>
+            <option value="33">Machine Learning</option>
+            <option value="34">Pengolahan Sinyal Digital</option>
+            <option value="35">Manajemen Jaringan</option>
+            <option value="36">Basis Data Lanjut</option>
+        </select><br>
+
+        <label for="startNode35">Wajib Minat Semester 5:</label><br>
+        <select id="startNode35" name="startNode35">
+            <option>Pilih Matkul</option>
+            <option value="33">Machine Learning</option>
+            <option value="34">Pengolahan Sinyal Digital</option>
+            <option value="35">Manajemen Jaringan</option>
+            <option value="36">Basis Data Lanjut</option>
+        </select><br>
+
+        <label for="startNode36">Wajib Minat 1:</label><br>
+        <select id="startNode36" name="startNode36">
+            <option>Pilih Matkul</option>
+            <option value="33">Machine Learning</option>
+            <option value="34">Pengolahan Sinyal Digital</option>
+            <option value="35">Manajemen Jaringan</option>
+            <option value="36">Basis Data Lanjut</option>
+        </select><br>
+
+    <!--Pilihan1 Semester 5-->
+    <label for="startNode37">Pilihan 1:</label><br>
+        <select id="startNode37" name="startNode37">
+            <option>Pilih Matkul</option>
+            <option value="37">Logika Samar</option>
+            <option value="38">Riset Operasi</option>
+            <option value="39">Komputasi Grid</option>
+            <option value="40">Kriptografi</option>
+            <option value="41">Wireless & Mobile Computing</option>
+            <option value="42">Biometric</option>
+            <option value="43">Teori Game</option>
+            <option value="44">Manajemen Sistem Informasi</option>
+            <option value="45">Metode Formal</option>
+            <option value="46">Model-Based Programming</option>
+            <option value="47">Robotika</option>
+        </select><br>
+
+    <!--Pilihan2 Semester 5-->
+        <label for="startNode38">Pilihan 2:</label><br>
+        <select id="startNode38" name="startNode38">
+            <option>Pilih Matkul</option>
+            <option value="37">Logika Samar</option>
+            <option value="38">Riset Operasi</option>
+            <option value="39">Komputasi Grid</option>
+            <option value="40">Kriptografi</option>
+            <option value="41">Wireless & Mobile Computing</option>
+            <option value="42">Biometric</option>
+            <option value="43">Teori Game</option>
+            <option value="44">Manajemen Sistem Informasi</option>
+            <option value="45">Metode Formal</option>
+            <option value="46">Model-Based Programming</option>
+            <option value="47">Robotika</option>
         </select><br>
 
         <input type="submit" value="DFS Traversal">
