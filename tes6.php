@@ -2012,10 +2012,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </select><br>
             </div>
     </div>
+            <input type="submit" value="Check">
+        </form>
+        <form method="get" action="">
+            <input type="submit" value="Reset" />
+        </form>
 </div>
-
-    <input type="submit" value="Check">
-</form>
 
     <?php
     // Menampilkan pesan ketersambungan jika tersedia
@@ -2044,10 +2046,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     });
     </script>
-
-    <form method="get" action="">
-        <input type="submit" value="Reset" />
-    </form>
 
 </body>
 </html>
