@@ -2055,5 +2055,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     });
     </script>
 
+    <form method="get" action="">
+        <input type="submit" value="Reset" />
+    </form>
+
 </body>
 </html>
