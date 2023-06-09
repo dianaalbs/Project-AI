@@ -1619,7 +1619,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <header class="w-auto">
     <center>
     <figure>
-    <img src="img/logoUNS.png" alt="logo" style="width:20%">
+    <img src="img/logoUNS.png" alt="logo" style="width:15%">
     </figure>
     <h2 class="fw-bold my-1 form mb-5 text-center">Penyusunan Rencana Studi Prodi Informatika UNS</h2>
     </center>
