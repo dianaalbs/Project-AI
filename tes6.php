@@ -1575,9 +1575,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $isConnected47 &&
         $isConnected48 &&
         $isConnected49){
-        $message = "Semua simpul awal terhubung!";
+        $message = "Penyusunan Rencana Studi Sudah Efektif";
     } else {
-        $message = "Tidak semua simpul awal terhubung!";
+        $message = "Penyusunan Rencana Studi Belum Efektif";
     }
 }
 ?>
@@ -1612,6 +1612,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin-top: 20px;
             font-weight: bold;
         }
+
     </style>
 
 <div class="d-flex justify-content-center">
@@ -1800,13 +1801,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <option value="67">Etika Profesi</option>
                 </select><br>
 
-                <label for="startNode44">Semester 7:</label><br>
                 <select id="startNode44" name="startNode44">
                     <option>Pilih Matkul</option>
                     <option value="68">KKN</option>
                 </select><br>
 
-                <label for="startNode45">Semester 7:</label><br>
                 <select id="startNode45" name="startNode45">
                     <option>Pilih Matkul</option>
                     <option value="69">Kewirausahaan</option>
@@ -2020,12 +2019,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <option>Pilih Matkul</option>
                 <option value="80">Skripsi/KM</option>
             </select><br>
-                </div>
             </div>
         </div>
 
-    <input type="submit" value="Check">
-</form>
+            <input class="btn w-30 mt-2 mb-2 btn-primary" type="submit" value="Check">
+        </form>
 
     <?php
     // Menampilkan pesan ketersambungan jika tersedia
@@ -2056,8 +2054,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </script>
 
     <form method="get" action="">
-        <input type="submit" value="Reset" />
+        <input class="btn w-30 mb-2 ml-3 btn-primary" type="submit" value="Reset" />
     </form>
-
+    </div>
 </body>
 </html>
