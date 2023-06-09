@@ -1672,7 +1672,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <!--Semester 3-->
             <label for="startNode16">Semester 3:</label><br>
-            <select id="startNode16" name="startNode6">
+            <select id="startNode16" name="startNode16">
                 <option>Pilih Matkul</option>
                 <option value="16">Matematika Diskrit II</option>
             </select>
@@ -1852,13 +1852,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </select>
         
             <label for="startNode11"></label><br>
-            <select id="startNode11" name="startNode">
+            <select id="startNode11" name="startNode11">
                 <option>Pilih Matkul</option>
                 <option value="11">Aljabar Linier</option>
             </select>
         
             <label for="startNode12"></label><br>
-            <select id="startNode12" name="startNode2">
+            <select id="startNode12" name="startNode12">
                 <option>Pilih Matkul</option>
                 <option value="12">Struktur Data & Algoritma</option>
             </select>
