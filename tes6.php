@@ -247,7 +247,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $graph->addEdge('77', '32');
     $graph->addEdge('78', '26');
     $graph->addEdge('79', '29');
-    $graph->addEdge('29', '25');
 
     // Memanggil metode DFS dengan simpul awal yang dikirim melalui form
     $startNode1 = $_POST['startNode1'];
