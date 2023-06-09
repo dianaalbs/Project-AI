@@ -1614,12 +1614,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     </style>
 
+<div class="d-flex justify-content-center">
+<header class="w-auto">
+    <center>
+    <figure>
+    <img src="img/logoUNS.png" alt="logo" style="width:20%">
+    </figure>
+    <h2 class="fw-bold my-1 form mb-5 text-center">Penyusunan Rencana Studi Prodi Informatika UNS</h2>
+    </center>
+</header>
+</div>
 
-<h2>DFS Web App</h2>
-
+<center>
 <div class="container">
     <div class="row">
-        <div class="col-6">
+        <div class="col-6 mx-auto px-2">
             <!--Semester 1-->
             <form method="POST" action="">
                 <label for="startNode1">Semester 1:</label><br>
@@ -1837,7 +1846,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </select><br>
         </div>
         
-        <div class="col-6">
+        <div class="col-6 mx-auto px-2">
             <!--Semester 2-->
             <label for="startNode9">Semester 2:</label><br>
             <select id="startNode9" name="startNode9">
@@ -2016,6 +2025,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <input type="submit" value="Check">
 </form>
+</center>
 
     <?php
     // Menampilkan pesan ketersambungan jika tersedia
