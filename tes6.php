@@ -2022,7 +2022,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
 
-            <input class="btn w-30 mt-2 mb-2 btn-primary" type="submit" value="Check">
+            <!-- <input class="btn w-30 mt-2 mb-2 btn-primary" type="submit" value="Check"> -->
+            <input type="submit" value="DFS Traversal">
+            <input type="button" class="reset-btn" value="Reset" onclick="resetDropdowns()">
         </form>
 
     <?php
@@ -2051,11 +2053,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         document.getElementById("startNode1").value = dropdownValue;
         }
     });
+
+    // Fungsi untuk mereset nilai dropdown
+    function resetDropdowns() {
+        document.getElementById("startNode1").selectedIndex = 0;
+        document.getElementById("startNode2").selectedIndex = 0;
+        document.getElementById("startNode3").selectedIndex = 0;
+    }
     </script>
 
-    <form method="get" action="">
+    <!-- <script>
+    // Simpan nilai dropdown sebagai parameter URL saat dipilih
+    document.getElementById("startNode1").addEventListener("change", function() {
+        var selectedValue = this.value;
+        var url = new URL(window.location.href);
+        url.searchParams.set("dropdownValue", selectedValue);
+        window.history.replaceState({}, '', url);
+    });
+
+    // Atur nilai dropdown saat halaman dimuat ulang
+    document.addEventListener("DOMContentLoaded", function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var dropdownValue = urlParams.get("dropdownValue");
+        if (dropdownValue) {
+        document.getElementById("startNode1").value = dropdownValue;
+        }
+    });
+    </script> -->
+
+    <!-- <form method="get" action="">
         <input class="btn w-30 mb-2 ml-3 btn-primary" type="submit" value="Reset" />
-    </form>
+    </form> -->
     </div>
 </body>
 </html>
