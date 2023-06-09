@@ -1625,7 +1625,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </header>
 </div>
 
-<center>
+
 <div class="container">
     <div class="row">
         <div class="col-6">
