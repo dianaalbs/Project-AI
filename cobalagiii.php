@@ -10,7 +10,9 @@
         'Matkul A' => array(),
         'Matkul B' => array('Matkul A'),
         'Matkul C' => array('Matkul A'),
-        'Matkul D' => array('Matkul B', 'Matkul C')
+        'Matkul D' => array('Matkul B', 'Matkul C'),
+        'Matkul E' => array('Matkul D'),
+        'Matkul F' => array('Matkul B', 'Matkul A')
     );
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -68,7 +70,7 @@
         <label for="matkul1">Mata Kuliah 1:</label>
         <select name="matkuls[]" id="matkul1">
             <?php
-            $matakuliah = array('Matkul A', 'Matkul B', 'Matkul C', 'Matkul D');
+            $matakuliah = array('Matkul A', 'Matkul B', 'Matkul C', 'Matkul D', 'Matkul E','Matkul F');
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
             }
