@@ -7,12 +7,36 @@
     <?php
     // Definisikan prasyarat untuk setiap mata kuliah
     $prasyarat = array(
-        'Matkul A' => array(),
-        'Matkul B' => array('Matkul A'),
-        'Matkul C' => array('Matkul A'),
-        'Matkul D' => array('Matkul B', 'Matkul C'),
-        'Matkul E' => array('Matkul D'),
-        'Matkul F' => array('Matkul B', 'Matkul A')
+        //SEMESTER 1
+        'Agama' => array(),
+        'Konsep Pemrograman' => array(),
+        'Sistem Digital' => array(),
+        'Kalkulus I' => array(),
+        'Fisika' => array(),
+        'Bahasa Inggris' => array(),
+        'Statistika & Probabilitas' => array(),
+        'Bahasa Indonesia' => array(),
+        //SEMESTER 2
+        'Kalkulus II' => array('Kalkulus I'),
+        'Matematika Diskrit I' => array(),
+        'Aljabar Linier' => array(),
+        'Struktur Data & Algoritma' => array('Konsep Pemrograman'),
+        'Organisasi Sistem Komputer' => array('Sistem Digital'),
+        'Pendidikan Kewarganegaraan' => array(''),
+        'Bahasa Inggris II' => array(''),
+        //SEMESTER 3
+        'Matematika Diskrit II' => array('Matematika Diskrit I'),
+        'Pemrograman Berorientasi Objek' => array('Struktur Data & Algoritma'),
+        'Basis Data' => array(),
+        'Sistem Operasi' => array('Organisasi Sistem Komputer'),
+        'Kewarganegaraan' => array(),
+        'Metode Numerik' => array('Kalkulus II', 'Aljabar Linier'),
+        'Desain & Analisis Algoritma' => array('Struktur Data & Algoritma'),
+        //SEMESTER 4
+        //SEMESTER 5
+        //SEMESTER 6
+        //SEMESTER 7
+        //SEMESTER 8
     );
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -70,7 +94,10 @@
         <label for="matkul1">Mata Kuliah 1:</label>
         <select name="matkuls[]" id="matkul1">
             <?php
-            $matakuliah = array('Matkul A', 'Matkul B', 'Matkul C', 'Matkul D', 'Matkul E','Matkul F');
+            $matakuliah = array('Agama', 'Konsep Pemrograman', 'Sistem Digital', 'Kalkulus I', 'Fisika','Bahasa Inggris','Statistika & Probabilitas',
+                                'Bahasa Indonesia','Kalkulus II','Metematika Diskrit I','Aljabar Linier','Struktur Data & Algoritma','Organisasi Sistem Komputer',
+                                'Pendidikan Kewarganegaraan','Bahasa Inggris II','Matematika Diskrit II','Pemrograman Berorientasi Objek','Basis Data','Sistem Operasi',
+                                'Kewarganegaraan','Metode Numerik','Desain & Analisis Algoritma');
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
             }
