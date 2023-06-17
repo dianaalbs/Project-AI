@@ -39,7 +39,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center mt-3">
     <header class="w-auto">
         <center>
         <figure>
@@ -213,40 +213,33 @@
     }
     ?>
 
+    <div class="container">
     <h2>Pilihan Mata Kuliah</h2><br>
-    <h3>Semester 1</h3>
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        <label for="matkul"></label>
-        <select name="matkuls[]" id="matkul1">
-            <?php
-            $semester1 = array(
-                'Pilih Matkul', 
-                'Agama', 
-                'Konsep Pemrograman', 
-                'Sistem Digital', 
-                'Kalkulus I', 
-                'Fisika',
-                'Bahasa Inggris',
-                'Statistika & Probabilitas',
-                'Bahasa Indonesia');
+    <div class="row">
+        <div class="col-6">
+        <h3>Semester 1</h3>
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <label for="matkul"></label>
+            <select name="matkuls[]" id="matkul1">
+                <?php
+                $semester1 = array(
+                    'Pilih Matkul', 
+                    'Agama', 
+                    'Konsep Pemrograman', 
+                    'Sistem Digital', 
+                    'Kalkulus I', 
+                    'Fisika',
+                    'Bahasa Inggris',
+                    'Statistika & Probabilitas',
+                    'Bahasa Indonesia');
 
-            foreach ($semester1 as $matkul) {
-                //echo '<option>Pilih Matkul</option>';
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester1 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
+                foreach ($semester1 as $matkul) {
+                    //echo '<option>Pilih Matkul</option>';
+                    echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+                }
+                ?>
+            </select>
+            <br><br>
 
         <label for="matkul2"></label>
         <select name="matkuls[]" id="matkul2">
@@ -308,91 +301,15 @@
         </select>
         <br><br>
 
-
-        <h3>Semester 2</h3>
-        <label for="matkul4"></label>
-        <select name="matkuls[]" id="matkul4">
-            <?php
-            $semester2 = array(
-                'Pilih Matkul', 
-                'Kalkulus II',
-                'Matematika Diskrit I',
-                'Aljabar Linier',
-                'Struktur Data & Algoritma',
-                'Organisasi Sistem Komputer',
-                'Pendidikan Kewarganegaraan',
-                'Bahasa Inggris II');
-
-            foreach ($semester2 as $matkul) {
-            echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
         <label for="matkul2"></label>
         <select name="matkuls[]" id="matkul2">
             <?php
-            foreach ($semester2 as $matkul) {
+            foreach ($semester1 as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
             }
             ?>
         </select>
         <br><br>
-
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester2 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester2 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester2 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester2 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester2 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
 
         <h3>Semester 3</h3>
         <label for="matkul5"></label>
@@ -472,78 +389,6 @@
         <select name="matkuls[]" id="matkul2">
             <?php
             foreach ($semester3 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-        <h3>Semester 4</h3>
-        <label for="matkul5"></label>
-        <select name="matkuls[]" id="matkul5">
-            <?php
-            $semester4 = array(
-                'Pilih Matkul', 
-                'Jaringan Komputer',
-                'Pemrograman Web',
-                'Kecerdasan Buatan',
-                'Rekayasa Perangkat Lunak',
-                'Pengembangan Aplikasi Bergerak',
-                'Teori Bahasa & Automata');
-
-            foreach ($semester4 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester4 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester4 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester4 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester4 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester4 as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
             }
             ?>
@@ -653,6 +498,252 @@
         </select>
         <br><br>
 
+        <h3>Semester 7</h3>
+        <label for="matkul5"></label>
+        <select name="matkuls[]" id="matkul5">
+            <?php
+            $semester7 = array(
+                'Pilih Matkul', 
+                'Etika Profesi',
+                'KKN',
+                'Kewirausahaan');
+
+            foreach ($semester7 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester7 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester7 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+        <p>Wajib Minat Semester 7</p>
+        <label for="matkul5"></label>
+        <select name="matkuls[]" id="matkul5">
+        <?php
+            $wajibSemester7 = array(
+                'Pilih Matkul',
+                'Kecerdasan Komputasional',
+                'Computer Vision',
+                'Teknologi IoT',
+                'Semantic Web');
+
+            foreach ($wajibSemester7 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+        <p>Pilihan Semester 7</p>
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+        <?php
+            $pilihanSemester7 = array(
+                'Pilih Matkul', 
+                'E-commerce',
+                'Simulasi & Pemodelan',
+                'Forensik Digital',
+                'Komputasi Biomedik',
+                'Enterprice Architecture',
+                'Web Mining dan Information Retrieval');
+
+            foreach ($pilihanSemester7 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($pilihanSemester7 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+        </div>
+
+        <div class="col-6">
+        <h3>Semester 2</h3>
+        <label for="matkul4"></label>
+        <select name="matkuls[]" id="matkul4">
+            <?php
+            $semester2 = array(
+                'Pilih Matkul', 
+                'Kalkulus II',
+                'Matematika Diskrit I',
+                'Aljabar Linier',
+                'Struktur Data & Algoritma',
+                'Organisasi Sistem Komputer',
+                'Pendidikan Kewarganegaraan',
+                'Bahasa Inggris II');
+
+            foreach ($semester2 as $matkul) {
+            echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester2 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester2 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester2 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester2 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester2 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester2 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+
+        <h3>Semester 4</h3>
+        <label for="matkul5"></label>
+        <select name="matkuls[]" id="matkul5">
+            <?php
+            $semester4 = array(
+                'Pilih Matkul', 
+                'Jaringan Komputer',
+                'Pemrograman Web',
+                'Kecerdasan Buatan',
+                'Rekayasa Perangkat Lunak',
+                'Pengembangan Aplikasi Bergerak',
+                'Teori Bahasa & Automata');
+
+            foreach ($semester4 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester4 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester4 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester4 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester4 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+        <label for="matkul2"></label>
+        <select name="matkuls[]" id="matkul2">
+            <?php
+            foreach ($semester4 as $matkul) {
+                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
+            }
+            ?>
+        </select>
+        <br><br>
+
+
         <h3>Semester 6</h3>
         <label for="matkul5"></label>
         <select name="matkuls[]" id="matkul5">
@@ -755,92 +846,6 @@
         </select>
         <br><br>
 
-        <h3>Semester 7</h3>
-        <label for="matkul5"></label>
-        <select name="matkuls[]" id="matkul5">
-            <?php
-            $semester7 = array(
-                'Pilih Matkul', 
-                'Etika Profesi',
-                'KKN',
-                'Kewirausahaan');
-
-            foreach ($semester7 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester7 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($semester7 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-        <p>Wajib Minat Semester 7</p>
-        <label for="matkul5"></label>
-        <select name="matkuls[]" id="matkul5">
-        <?php
-            $wajibSemester7 = array(
-                'Pilih Matkul',
-                'Kecerdasan Komputasional',
-                'Computer Vision',
-                'Teknologi IoT',
-                'Semantic Web');
-
-            foreach ($wajibSemester7 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-        <p>Pilihan Semester 7</p>
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-        <?php
-            $pilihanSemester7 = array(
-                'Pilih Matkul', 
-                'E-commerce',
-                'Simulasi & Pemodelan',
-                'Forensik Digital',
-                'Komputasi Biomedik',
-                'Enterprice Architecture',
-                'Web Mining dan Information Retrieval');
-
-            foreach ($pilihanSemester7 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
-        <label for="matkul2"></label>
-        <select name="matkuls[]" id="matkul2">
-            <?php
-            foreach ($pilihanSemester7 as $matkul) {
-                echo '<option value="' . $matkul . '">' . $matkul . '</option>';
-            }
-            ?>
-        </select>
-        <br><br>
-
         <h3>Semester 8</h3>
         <label for="matkul5"></label>
         <select name="matkuls[]" id="matkul5">
@@ -855,8 +860,12 @@
             ?>
         </select>
         <br><br>
-
+        </div>
+    </div>
         <input type="submit" value="Cek Prasyarat">
+    </div>
+
+
     </form>
 </body>
 </html>
