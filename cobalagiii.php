@@ -109,7 +109,7 @@
         'Web Mining dan Information Retrieval' => array('Pemrograman Web', 'Data Mining', 'Kecerdasan Buatan'),
 
         //SEMESTER 8
-        'Skripsi' => array(),
+        'Skripsi' => array()
     );
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
