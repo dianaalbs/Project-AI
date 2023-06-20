@@ -53,7 +53,6 @@
     <?php
     // Definisikan prasyarat untuk setiap mata kuliah
     $prasyarat = array(
-        'Pilih Matkuls' => array(),  
         //SEMESTER 1
         'Agama' => array(),
         'Konsep Pemrograman' => array(),
