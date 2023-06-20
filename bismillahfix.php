@@ -117,12 +117,10 @@
         //SEMESTER 6
         'Metode Penelitian' => array(),
         'Magang' => array(),
-        'Proyek Perangkat Lunak' => array(),
 
         //WAJIB MINAT SEMESTER 6
         'Expert System' => array('Kecerdasan Buatan'),
         'Teknik Multimedia' => array('Pengolahan Citra Digital'),
-        'Manajemen Jaringan' => array('Jaringan Komputer'),
         'Jaminan Mutu Perangkat Lunak' => array('Rekayasa Perangkat Lunak'),
 
         //PILIHAN SEMESTER 6
