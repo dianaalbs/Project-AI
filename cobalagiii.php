@@ -115,7 +115,7 @@
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $selectedMatkuls = $_POST['matkuls'];
 
-        if (count($selectedMatkuls) == 49) {
+        if (count($selectedMatkuls) === 49) {
             // Mengecek ketersambungan dan prasyarat menggunakan algoritma DFS
             function dfs($matkul, $selectedMatkuls, $prasyarat, &$visited) {
                 $visited[$matkul] = true;
@@ -167,17 +167,17 @@
         <label for="matkul1">Mata Kuliah 1:</label>
         <select name="matkuls[]" id="matkul1">
             <?php
-            $matakuliah = array('SEMESTER 1', 'Agama', 'Konsep Pemrograman', 'Sistem Digital', 'Kalkulus I', 'Fisika','Bahasa Inggris','Statistika & Probabilitas',
-                                'Bahasa Indonesia','SEMESTER 2','Kalkulus II','Matematika Diskrit I','Aljabar Linier','Struktur Data & Algoritma','Organisasi Sistem Komputer',
-                                'Pendidikan Kewarganegaraan','Bahasa Inggris II','SEMESTER 3','Matematika Diskrit II','Pemrograman Berorientasi Objek','Basis Data','Sistem Operasi',
-                                'Kewarganegaraan','Metode Numerik','Desain & Analisis Algoritma', 'SEMESTER 4','Jaringan Komputer', 'Pemrograman Web', 'Kecerdasan Buatan', 'Rekayasa Perangkat Lunak',
-                                'Pengembangan Aplikasi Bergerak', 'Teori Bahasa & Automata', 'SEMESTER 5','Data Mining','Interaksi Manusia & Komputer', 'Sistem Terdistribusi', 'Pengolahan Citra Digital',
+            $matakuliah = array('Agama', 'Konsep Pemrograman', 'Sistem Digital', 'Kalkulus I', 'Fisika','Bahasa Inggris','Statistika & Probabilitas',
+                                'Bahasa Indonesia','Kalkulus II','Matematika Diskrit I','Aljabar Linier','Struktur Data & Algoritma','Organisasi Sistem Komputer',
+                                'Pendidikan Kewarganegaraan','Bahasa Inggris II','Matematika Diskrit II','Pemrograman Berorientasi Objek','Basis Data','Sistem Operasi',
+                                'Kewarganegaraan','Metode Numerik','Desain & Analisis Algoritma','Jaringan Komputer', 'Pemrograman Web', 'Kecerdasan Buatan', 'Rekayasa Perangkat Lunak',
+                                'Pengembangan Aplikasi Bergerak', 'Teori Bahasa & Automata','Data Mining','Interaksi Manusia & Komputer', 'Sistem Terdistribusi', 'Pengolahan Citra Digital',
                                 'Machine Learning', 'Pengolahan Sinyal Digital','Manajemen Jaringan','Basis Data Lanjut','Logika Samar','Riset Operasi','Komputasi Grid','Kriptografi','Wireless & Mobile Computing',
-                                'Biometric','Teori Game','Manajemen Sistem Informasi','Metode Formal','Model-Based Programming','Robotika','SEMESTER 6','Metode Penelitian','Magang','Proyek Perangkat Lunak','Expert System',
+                                'Biometric','Teori Game','Manajemen Sistem Informasi','Metode Formal','Model-Based Programming','Robotika','Metode Penelitian','Magang','Proyek Perangkat Lunak','Expert System',
                                 'Teknik Multimedia','Manajemen Jaringan','Jaminan Mutu Perangkat Lunak','Manajemen Proyek','Proyek Perangkat Lunak','Pengujian Perangkat Lunak','Business Intelligence','Kapita Selekta Ilmu Komputer',
-                                'Komputasi Cloud','Keamanan Jaringan Komputer','Cyber Security','Sistem Pendukung Keputusan','Software Process','Pengamanan Data Multimedia','Natural Language Processing','SEMESTER 7','Etika Profesi','KKN','Kewirausahaan',
+                                'Komputasi Cloud','Keamanan Jaringan Komputer','Cyber Security','Sistem Pendukung Keputusan','Software Process','Pengamanan Data Multimedia','Natural Language Processing','Etika Profesi','KKN','Kewirausahaan',
                                 'Kecerdasan Komputasional', 'Computer Vision','Teknologi IoT','Semantic Web','E-commerce','Simulasi & Pemodelan','Forensik Digital','Komputasi Biomedik','Enterprice Architecture','Web Mining dan Information Retrieval',
-                                'SEMESTER 8','Skripsi');
+                                'Skripsi');
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
             }
@@ -202,8 +202,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 4:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul4">Mata Kuliah 4:</label>
+        <select name="matkuls[]" id="matkul4">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -211,8 +211,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 5:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul5">Mata Kuliah 5:</label>
+        <select name="matkuls[]" id="matkul5">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -220,8 +220,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 6:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul6">Mata Kuliah 6:</label>
+        <select name="matkuls[]" id="matkul6">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -229,8 +229,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 7:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul7">Mata Kuliah 7:</label>
+        <select name="matkuls[]" id="matkul7">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -238,8 +238,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 8:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul8">Mata Kuliah 8:</label>
+        <select name="matkuls[]" id="matkul8">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -247,8 +247,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 9:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul9">Mata Kuliah 9:</label>
+        <select name="matkuls[]" id="matkul9">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -256,8 +256,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 10:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul10">Mata Kuliah 10:</label>
+        <select name="matkuls[]" id="matkul10">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -265,8 +265,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 11:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul11">Mata Kuliah 11:</label>
+        <select name="matkuls[]" id="matkul11">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -274,8 +274,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 12:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul12">Mata Kuliah 12:</label>
+        <select name="matkuls[]" id="matkul12">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -283,8 +283,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 13:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul13">Mata Kuliah 13:</label>
+        <select name="matkuls[]" id="matkul3">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -292,8 +292,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 14:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul14">Mata Kuliah 14:</label>
+        <select name="matkuls[]" id="matkul14">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -301,8 +301,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 15:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul15">Mata Kuliah 15:</label>
+        <select name="matkuls[]" id="matkul15">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -310,8 +310,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 16:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul16">Mata Kuliah 16:</label>
+        <select name="matkuls[]" id="matkul16">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -319,8 +319,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 17:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul17">Mata Kuliah 17:</label>
+        <select name="matkuls[]" id="matkul17">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -328,8 +328,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 18:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul18">Mata Kuliah 18:</label>
+        <select name="matkuls[]" id="matkul18">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -337,8 +337,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 19:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul19">Mata Kuliah 19:</label>
+        <select name="matkuls[]" id="matkul19">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
@@ -346,8 +346,8 @@
             ?>
         </select>
         <br><br>
-        <label for="matkul2">Mata Kuliah 20:</label>
-        <select name="matkuls[]" id="matkul2">
+        <label for="matkul20">Mata Kuliah 20:</label>
+        <select name="matkuls[]" id="matkul20">
             <?php
             foreach ($matakuliah as $matkul) {
                 echo '<option value="' . $matkul . '">' . $matkul . '</option>';
