@@ -2,8 +2,39 @@
 <html>
 <head>
     <title>Cek Pilihan Mata Kuliah</title>
+
+    <style>
+    .button {
+        background-color: blue;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    h2, p, ul, li{
+        text-align: center;
+    }
+
+    </style>
 </head>
 <body>
+    <div>
+    <header class="w-auto">
+        <center>
+        <figure>
+        <img src="img/logoUNS.png" alt="logo" style="width:10%">
+        </figure>
+        <h1>Penyusunan Rencana Studi Prodi Informatika UNS</h1>
+        </center>
+    </header>
+    </div>
+
     <?php
     // Definisikan prasyarat untuk setiap mata kuliah
     $prasyarat = array(
@@ -161,7 +192,7 @@
         }
     }
     ?>
-
+    <center>
     <h2>Pilihan Mata Kuliah</h2>
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <?php
@@ -175,7 +206,8 @@
             echo "</select><br><br>";
         }
         ?>
-        <input type="submit" value="Cek Prasyarat">
+        <input class="button" type="submit" value="Cek Prasyarat">
     </form>
+    </center>
 </body>
 </html>
