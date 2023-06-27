@@ -18,15 +18,20 @@
         border-radius: 5px;
     }
 
-    h2, p, ul, li{
+    h2, p{
         text-align: center;
+    }
+
+    ul {
+    text-align: center;
+    list-style: inside;
     }
 
     </style>
 </head>
 <body>
     <div>
-    <header class="w-auto">
+    <header>
         <center>
         <figure>
         <img src="img/logoUNS.png" alt="logo" style="width:10%">
