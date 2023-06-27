@@ -22,15 +22,18 @@
         text-align: center;
     }
 
-    ul {
-    text-align: center;
-    list-style: inside;
+    div{
+        text-align: center;
+        margin-top: -20px;
+    }
+    ul{
+        display: inline-block;
+        text-align: left;
     }
 
     </style>
 </head>
 <body>
-    <div>
     <header>
         <center>
         <figure>
@@ -39,7 +42,6 @@
         <h1>Penyusunan Rencana Studi Prodi Informatika UNS</h1>
         </center>
     </header>
-    </div>
 
     <?php
     // Definisikan prasyarat untuk setiap mata kuliah
@@ -184,17 +186,22 @@
             }
 
             // Menampilkan pesan sesuai dengan hasil pengecekan prasyarat
+            echo "<div class>";
             if (empty($prasyaratTerlewat)) {
                 echo "<h2>Rencana studi baik</h2>";
             } else {
                 echo "<h2>Rencana studi tidak baik</h2>";
                 echo "<p>Anda belum memenuhi prasyarat untuk mata kuliah berikut:</p>";
+                echo "<div>";
                 echo "<ul>";
                 foreach ($prasyaratTerlewat as $prereq) {
                     echo "<li>$prereq</li>";
                 }
                 echo "</ul>";
+                echo "</div>";
             }
+            echo "</div>";
+
         }
     }
     ?>
