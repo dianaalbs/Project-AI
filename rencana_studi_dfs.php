@@ -186,7 +186,6 @@
             }
 
             // Menampilkan pesan sesuai dengan hasil pengecekan prasyarat
-            echo "<div class>";
             if (empty($prasyaratTerlewat)) {
                 echo "<h2>Rencana studi baik</h2>";
             } else {
@@ -200,8 +199,6 @@
                 echo "</ul>";
                 echo "</div>";
             }
-            echo "</div>";
-
         }
     }
     ?>
